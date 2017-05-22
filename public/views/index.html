@@ -5,24 +5,25 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/public/css/reset.css" />
         <link rel="stylesheet" href="/public/css/styles.css" />
+        <script src="/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="/public/js/scripts.js"></script>
     </head>
     <body>
         <div class="container">
             <div class="controls">
-                <div class="num-control">
-                    <span class="up-down">-</span><span class="number">25</span><span class="up-down">+</span>
+                <div class="num-control pomodoro">
+                    <button class="up-down" id="pomo-down">-</button><span class="number" id="pomo">25</span><button class="up-down" id="pomo-up">+</button>
                 </div>
-                <div class="num-control">
-                    <span class="up-down">-</span><span class="number">5</span><span class="up-down">+</span>
+                <div class="num-control break">
+                    <button class="up-down" id="break-down">-</button><span class="number" id="break">5</span><button class="up-down" id="break-up">+</button>
                 </div>
             </div>
             <div class="center">
                 <div class="button">
-                    <input type="button" value="Stop">
+                    <input type="button" value="Start" id="stopngo">
                 </div>
                 <div class="timer">
-                    <span class="number">25</span> <span class="unit">minutes</span> <span class="number">00</span> <span class="unit">seconds</span>
+                    <span class="number" id="min">25</span> <span class="unit">minutes</span> <span class="number" id="sec">0</span> <span class="unit">seconds</span>
                 </div>
             </div>
         </div>

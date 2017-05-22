@@ -12,22 +12,41 @@ body {
 
 .controls {
     margin-left: 20%;
-    max-width: 10%;
+    max-width: 9%;
 }
 
 .num-control {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 10% 0;
 }
 
-.up-down, .unit {
+.unit {
     color: #D5DAE0;
+}
+
+.up-down {
+    color: #D5DAE0;
+    background-color: white;
+    border: none;
+    font-size: 1em;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active, input:active {
+    transform: scale(1.5);
 }
 
 .center {
     text-align: center;
     margin-top: 5%;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
 }
 
 .button {
@@ -43,4 +62,9 @@ input {
     font-family: 'Open Sans', sans-serif;
     color: #4E81C3;
     font-size: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
 }
